@@ -3,6 +3,7 @@
  Resource | Description 
  ------- | ------------  
  http://www.ee.surrey.ac.uk/Teaching/Unix/ | Tutorial on unix and bash. We will use this for the course. 
+http://www.thegeekstuff.com/2009/03/15-practical-unix-grep-command-examples | Grep tutorial
 
 ## Learning Python and packages
 Resource | Description 
