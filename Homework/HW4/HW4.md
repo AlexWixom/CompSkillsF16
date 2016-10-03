@@ -43,7 +43,7 @@ This homework will accept a series of fasta headers for sequences from STDIN, co
 
 3. Print each of these fields, separated by tabs
 
-4. Run your program and redirect the output into a file named *HW2_output.txt*
+4. Run your program and redirect the output into a file named *HW4_output.txt*
 
 ## Turn in homework
 1. Commit your work to our private homework repo
