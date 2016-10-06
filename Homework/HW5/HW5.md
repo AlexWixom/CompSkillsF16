@@ -13,7 +13,7 @@
 2. Review loops and function definitions [https://docs.python.org/3.5/tutorial/controlflow.html](https://docs.python.org/3.5/tutorial/controlflow.html)
 3. Work through [https://docs.python.org/3.5/tutorial/errors.html#](https://docs.python.org/3.5/tutorial/errors.html#)
 
-## Things to do before midnight, **10/6**, or sooner
+## Things to do before midnight, **10/13**, or sooner (**was 10/6**)
 ###Write code to parse fasta file, keep selected data items
 Write *parseHiseq.py* to do the following (**note** this is a modification of the solution to HW4)
 
