@@ -2,7 +2,7 @@
 
 **NOTE: This is not the actual assignment yet!**
 
-In this assignment gives you will XXX.
+In this assignment gives you will do statistical analysis of correlations between diversity and metadata, and plot the results.
 
 ### Readings
 1. Read XXX
