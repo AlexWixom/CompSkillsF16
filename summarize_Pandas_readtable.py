@@ -21,9 +21,7 @@ from pandas import Series, DataFrame
 
 # read data from input file
 try:
-   allDataFrame = pd.read_table( sys.argv[1], 
-      comment='#', 
-      usecols=[ 'Gene','Country','gcContent' ] )
+   allDataFrame = pd.read_table( sys.argv[1], comment='#', usecols=[ 'Gene','Country','gcContent' ] )
 except OSError as err:
    print( "**ERROR** Cannot open %s, error: %s" % ( sys.argv[1], err ) )
 except:
