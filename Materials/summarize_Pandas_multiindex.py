@@ -33,4 +33,23 @@ allDataFrame['GeneFamily'] = [x[:x.find('_')] for x in allDataFrame['Gene'] ]
 allDataFrame['highGC'] = allDataFrame.gcContent > 0.4
 allDataFrame['lowGC']  = allDataFrame.gcContent < 0.4
 
-allDataFrame.set_index(['Country','GeneFamily','Gene'])
+allDataFrame.set_index(['Country','GeneFamily','Gene'], inplace=True)
+
+allDataFrame.std()
+allDataFrame.mean()
+
+allDataFrame.mean(level='GeneFamily')
+allDataFrame.count(level='Country')
+
+allDataFrame.mean(level='Country')
+summaryByCountryGene = DataFrame()
+summaryByCountryGene['mean'] = allDataFrame.mean(level=['Country', 'GeneFamily'])['gcContent']
+summaryByCountryGene['std'] = allDataFrame.std(level=['Country', 'GeneFamily'])['gcContent']
+
+sBCGu = summaryByCountryGene.unstack()
+
+sBCGu.cov().ix['mean']
+sBCGu.corr().ix['mean']
+
+
+
