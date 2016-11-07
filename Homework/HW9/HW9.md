@@ -12,11 +12,6 @@ do some statistics and plotting on microbiome data?
 ## Things to do before beginning of class, **11/17**, or sooner
 Later, we will look for correlations between microbiome changes and patient metadata.
 
-1. Read *../Resources/vaginal_metadata.txt* into a pandas dataframe 
-2. Drop the first three columns (*ID, DATE_COM, and SITE2*)
-3. Merge the **first** dataframe from above (the one with a row for each day) with this one, using the patient name as the common field.
-
-	Beware, there may be some rows that don't match up. Again, this is real data, and that sort of thing happens all the time.
 
 
 You will XXX
