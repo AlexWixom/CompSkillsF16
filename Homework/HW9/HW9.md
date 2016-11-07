@@ -11,10 +11,17 @@ In this assignment gives you will
 1. Read about Matplotlib
 2. Work through XXX
 
+<<<<<<< HEAD
 ## Things to do before beginning of class, **11/10**, or sooner
 * make stacked barcharts of each woman's microbiome
 * make dot plots of diversity indexes by women
 * plot Lacto and Gardinella abundance against diversity metric
+=======
+## Things to do before beginning of class, **11/17**, or sooner
+Later, we will look for correlations between microbiome changes and patient metadata.
+
+
+>>>>>>> master
 
 You will XXX
 
