@@ -2,22 +2,19 @@
 
 **NOTE: This is not the actual assignment yet!**
 
-In this assignment gives you will do statistical analysis of correlations between diversity and metadata, and plot the results.
+In this assignment gives you will 
 
-do some statistics and plotting on microbiome data?
+* plot data from HW7
+* compute some co-variances and correlations
+
 ### Readings
-1. Read XXX
+1. Read about Matplotlib
 2. Work through XXX
 
-## Things to do before beginning of class, **11/17**, or sooner
-Later, we will look for correlations between microbiome changes and patient metadata.
-
-1. Read *../Resources/vaginal_metadata.txt* into a pandas dataframe 
-2. Drop the first three columns (*ID, DATE_COM, and SITE2*)
-3. Merge the **first** dataframe from above (the one with a row for each day) with this one, using the patient name as the common field.
-
-	Beware, there may be some rows that don't match up. Again, this is real data, and that sort of thing happens all the time.
-
+## Things to do before beginning of class, **11/10**, or sooner
+* make stacked barcharts of each woman's microbiome
+* make dot plots of diversity indexes by women
+* plot Lacto and Gardinella abundance against diversity metric
 
 You will XXX
 
