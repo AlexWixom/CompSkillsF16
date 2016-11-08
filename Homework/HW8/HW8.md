@@ -27,7 +27,9 @@ MEDS_SP	|type(s) of medication used
 ## Readings
 1. Read text chapter 8, pages 217--236
 2. Read text chapter 7, pages 175--192
-## Coding: due by 11/17, midnight ##
+## Coding: due by 11/29, midnight ##
+**Note that the due date is the *Tuesday* after break**. But don't put this off. HW9 is due the **Thursday** after break. 
+
 Write a program called *microbiome_analysis.py* that does the following:
 
 1. Read *summaryByDay.txt* from homework 7 into a pandas dataframe, index by woman, week, and day
