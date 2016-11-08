@@ -1,34 +1,34 @@
-# Homework XXX: ****DRAFT**** 
+# Homework 9: ****DRAFT**** 
 
-**NOTE: This is not the actual assignment yet!**
+**NOTE: This is not the actual assignment yet!** I'm posting it for those of you who might want to get started anyway.
 
-In this assignment gives you will XXX.
+In this assignment gives you will make plots from the OTU relative abundances and metadata from previous assignments. 
 
-do some statistics and plotting on microbiome data?
-### Readings
-1. Read XXX
-2. Work through XXX
+## Things to Do by midnight, **12/1**, or Sooner ##
 
-## Things to do before beginning of class, **11/17**, or sooner
-Later, we will look for correlations between microbiome changes and patient metadata.
+Write a program called *plots.py* that uses matplotlib to create some plots/charts to analyze microbiome data from previous assignments (do what you need to to get the data into a usable format). For each of these, either turn in all work in a jupyter notebook or create separate png files named *stacked.png* and *diversity.png* (respectively for each step 1--2 below.)
 
-1. Read *../Resources/vaginal_metadata.txt* into a pandas dataframe 
-2. Drop the first three columns (*ID, DATE_COM, and SITE2*)
-3. Merge the **first** dataframe from above (the one with a row for each day) with this one, using the patient name as the common field.
+1. Make horizontal stacked barcharts of each woman's microbiome that looks like this (pay attention to titles and axis lables)
 
-	Beware, there may be some rows that don't match up. Again, this is real data, and that sort of thing happens all the time.
+	![barchart format](barchart.png)
 
+2. Make dot plots of average diversity indexes by women
 
-You will XXX
+	![dot plot format](dotplot.png)
 
-1. do it
-2. do this too
-3. ...
+3. (extra credit) Plot histogram of Shannon diversity scores for all the data
+
+	![histogram format](histogram.png)
 ## Turn in homework
-
 1. Commit your work
 2. Update your local master
 3. Sync with the remote master (that is how we will turn in homework!).
-
 ## Grading
-We will grade your homework by XXX
+Grades will be determined as follows:
+
+Grade | Criteria 
+-------- | --------------
+0          | Nothing turned in
+1          | *plots.py*  turned in but doesn't run, or is incorrect
+2          | *plots.py* accurate and figures correctly formatted
+3          | Code uses good style. Or does extra credit question.
