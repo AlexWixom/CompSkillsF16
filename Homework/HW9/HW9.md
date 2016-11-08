@@ -28,4 +28,4 @@ Grade | Criteria
 0          | Nothing turned in
 1          | *plots.py*  turned in but doesn't run, or is incorrect
 2          | *plots.py* accurate and figures correctly formatted
-3          | Code uses good style or correct answer for last (extra credit) task
+3          | Code uses good style
