@@ -1,7 +1,7 @@
 latex input:	mmd-article-header  
 latex input:	ftp-metadata 
 Title:	HW7, processing microbiome data
-Date:	2016-10-27
+Date:	2016-10-24
 Base Header Level:	2  
 latex mode:	article  
 Keywords:	MultiMarkdown, Markdown, XML, XHTML, XSLT, PDF   
@@ -13,7 +13,8 @@ latex input:	mmd-natbib-plain
 latex input:	mmd-article-begin-doc  
 latex footer:	mmd-article-footer  
 
-# Homework 7: Human microbiome analysis, part II
+# Homework 7: Human Microbiome Analysis, Part II #
+
 
 We will continue analysis of two actual 
 datasets from a human vaginal microbiome study. 
@@ -29,16 +30,16 @@ Ravel, J., Brotman, R. M., Gajer, P., Ma, B., Nandy, M., Fadrosh, D. W., et al. 
 * Create summary files
 ## Readings, by 10/27
 1. Work through textbook, Chapter 5, *Getting Started with Pandas*, pages 133--143
-## Things to Do Before Midnight, **10/27**, or Sooner ##
+## Things to Do Before Midnight, **11/10**, or Sooner ##
 Write a program named *microbiome_summary.py* that uses pandas to do the following:
 
 1.  Read *../Resources/vaginal_communities.txt* into a pandas dataframe named *summaryByDay*
 
 	a. Change all OTU counts to relative abundances (the relative abundance is the read counts--the number in columns--divided by the total count in *Total*)
 
-	b. Drop the following columns (or just don't add them): ID, time, sampleID, Day, Batch_ID, Date
+	b. Drop any columns that you don't need
 	
-3. In a different dataframe, called *summaryByWeek*, compute the average relative abundance of *each OTU for each patient for weeks 1 and 10* (that is, each patient will have two rows). This dataframe will also lack columns: *ID, time, sampleID, Day, Batch_ID, Date*
+2. In a different dataframe, called *summaryByWeek*, compute the average relative abundance of *each OTU for each patient for weeks 1 and 10* (that is, each patient will have two rows).
 
 	a. Be sure to update the Totals column to be the total reads for each of the two weeks 
 
@@ -50,13 +51,11 @@ Write a program named *microbiome_summary.py* that uses pandas to do the followi
 
 	The *Inverse Simpson Diversity Index* is $\left( \sum_{1,N} r_i^2 \right)^{-1}$ where $N$ and $r_i$ are as above.
 
-4. In a different dataframe, called *summaryByWoman*, compute the average relative abundance of *each OTU for each patient* (that is, there will be one row per patient, summarizing the data for that patient). This dataframe will also lack columns: *ID, time, sampleID, Day, Batch_ID, Date*
+4. In a different dataframe, called *summaryByWoman*, compute the average relative abundance of *each OTU for each patient* (that is, there will be one row per patient, summarizing the data for that patient).
 
-	a. Be sure to update the Totals column 
-
-	b. Add a column with the *Shannon Diversity Index* for each row
-
-	c. Add another column with the *Inverse Simpson Diversity Index* for each row
+		a. Be sure to update the Totals column 
+		b. Add a column with the *Shannon Diversity Index* for each row
+		c. Add another column with the *Inverse Simpson Diversity Index* for each row
 	
 4. Write these dataframes as tab delimited files with the same names: *summaryByDay.txt*, *summaryByWeek.txt*, and *summaryByWoman.txt*. You will use this for the next two assignments.You will use this in the next assignment.
 
@@ -74,8 +73,8 @@ Grade | Criteria
 -------- | --------------
 0          | Nothing turned in
 1          | Code turned in but doesn't run, or is incorrect
-2          | *diversity_summary.txt* and *cooked_data.txt* are correct
-3          |  *diversity_summary.txt* and *cooked_data.txt* are correct, and code uses good style (as per our readings on style)
+2          | *summaryByDay.txt*, *summaryByWeek.txt*, and *summaryByWoman.txt* are correct
+3          |  *summaryByDay.txt*, *summaryByWeek.txt*, and *summaryByWoman.txt* are correct, and code uses good style (as per our readings on style)
 
 ## Hints ##
 * Notice that this is essentially doing the same things three times. That is a good opportunity for using function definitions. 
