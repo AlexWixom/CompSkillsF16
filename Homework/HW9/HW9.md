@@ -16,6 +16,9 @@ Write a program called *plots.py* that uses matplotlib to create some plots/char
 
 	![dot plot format](dotplot.png)
 
+3. (extra credit) Plot histogram of Shannon diversity scores for all the data
+
+	![histogram format](histogram.png)
 ## Turn in homework
 1. Commit your work
 2. Update your local master
@@ -28,4 +31,4 @@ Grade | Criteria
 0          | Nothing turned in
 1          | *plots.py*  turned in but doesn't run, or is incorrect
 2          | *plots.py* accurate and figures correctly formatted
-3          | Code uses good style
+3          | Code uses good style. Or does extra credit question.
