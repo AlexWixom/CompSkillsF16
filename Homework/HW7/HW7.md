@@ -30,7 +30,11 @@ Ravel, J., Brotman, R. M., Gajer, P., Ma, B., Nandy, M., Fadrosh, D. W., et al. 
 * Create summary files
 ## Readings, by 10/27
 1. Work through textbook, Chapter 5, *Getting Started with Pandas*, pages 133--143
-## Things to Do Before Midnight, **11/10**, or Sooner ##
+## Things to Do Before Midnight, **11/17**, or Sooner ##
+
+
+>**===> NOTE: this is a change in due date, because I screwed up the definition of Shannon index! This change also makes the assignment easier by adding columns for the diversity metrics to each dataframe <===**
+
 Write a program named *microbiome_summary.py* that uses pandas to do the following:
 
 1.  Read *../Resources/vaginal_communities.txt* into a pandas dataframe named *summaryByDay*
@@ -38,25 +42,31 @@ Write a program named *microbiome_summary.py* that uses pandas to do the followi
 	a. Change all OTU counts to relative abundances (the relative abundance is the read counts--the number in columns--divided by the total count in *Total*)
 
 	b. Drop any columns that you don't need
-	
+
+	c. Add a column with the *Shannon Diversity Index* for each row (day).
+
+	>The *Shannon Diversity Index* is $- \sum_{1,N} r_i \log r_i$ where $N$ is the number of OTU columns, $\log$ is the natural logarithm, and $r_i$ is the relative abundance of the OTU $i$. This is a common measure of species diversity in an ecosystem (though technically we should be using probabilities, rather than relative abundances--but let that slide.) Note that the log function is in the *numpy* package and is named *log* (so you will want an *import numpy as np* and *np.log()* somewhere in your code.)
+
+	d. Add another column with the *Inverse Simpson Diversity Index* for each row (day).
+
+	>The *Inverse Simpson Diversity Index* is $\left( \sum_{1,N} r_i^2 \right)^{-1}$ where $N$ and $r_i$ are as above.
+
 2. In a different dataframe, called *summaryByWeek*, compute the average relative abundance of *each OTU for each patient for weeks 1 and 10* (that is, each patient will have two rows).
 
 	a. Be sure to update the Totals column to be the total reads for each of the two weeks 
 
-	c. Add a column with the *Shannon Diversity Index* for each row
-
-	The *Shannon Diversity Index* is $\sum_{1,N} \frac{r_i}{\log r_i}$ where $N$ is the number of OTU columns, $\log$ is the natural logarithm, and $r_i$ is the relative abundance of the OTU $i$. This is a common measure of species diversity in an ecosystem (though technically we should be using probabilities, rather than relative abundances--but let that slide.) Note that the log function is in the *numpy* package and is named *log* (so you will want an *import numpy as np* and *np.log()* somewhere in your code.)
-
-	d. Add another column with the *Inverse Simpson Diversity Index* for each row.
-
-	The *Inverse Simpson Diversity Index* is $\left( \sum_{1,N} r_i^2 \right)^{-1}$ where $N$ and $r_i$ are as above.
+	b. Add a column named *Shannon* with the average Shannon diversity for each row (week)
+		
+	c. Add another column with the *Inverse Simpson Diversity Index* for each row (week)
 
 4. In a different dataframe, called *summaryByWoman*, compute the average relative abundance of *each OTU for each patient* (that is, there will be one row per patient, summarizing the data for that patient).
 
-		a. Be sure to update the Totals column 
-		b. Add a column with the *Shannon Diversity Index* for each row
-		c. Add another column with the *Inverse Simpson Diversity Index* for each row
+	a. Be sure to update the Totals column 
 	
+	b. Add a column with the *Shannon Diversity Index* for each row (woman)
+	
+	c. Add another column with the *Inverse Simpson Diversity Index* for each row (woman)
+
 4. Write these dataframes as tab delimited files with the same names: *summaryByDay.txt*, *summaryByWeek.txt*, and *summaryByWoman.txt*. You will use this for the next two assignments.You will use this in the next assignment.
 
 ## Turn in homework

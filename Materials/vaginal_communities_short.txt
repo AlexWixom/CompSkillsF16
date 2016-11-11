@@ -1,0 +1,1 @@
+ID	patientID	Week	Day	Lactobacillus_crispatus	Lactobacillus_inersw1.1	AYAC01	1	1	4478	12w1.2	AYAC01	1	2	3548	8w2.1	AYAC02	1	1	6147	422w2.64	AYAC02	10	1	3352	1022w3.65	AYAC03	10	2	3346	1974
