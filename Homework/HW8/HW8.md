@@ -66,3 +66,5 @@ Grade | Criteria
 1          | *microbiome_analysis.py*  turned in but doesn't run, or is incorrect
 2          |   Accuracy of *Correlations.txt*, reasonable answers in *Analysis.md*
 3          |  Code uses good style, or analysis is really, really good (but this isn't a research paper, so don't go overboard). In particular, if you examine correlations conditional on the appropriate events (for example, number of sexual partners or spermicide use conditional on having intercourse), or recoding Nugent scores to BV positive or negative.
+## Notes and Hints ##
+I have added output files from HW7 to the *Materials* directory, just in case you didn't get HW7 to run. 
