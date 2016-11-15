@@ -1,4 +1,4 @@
-# Homework 8:
+vag	# Homework 8:
 In this assignment you will continue human microbiome analysis by merging metadata and microbiome profile datasets and looking for correlations. There will be one or two assignments due after break that will plot data from these studies.
 
 The metadata, in *Homework/Resources/vaginal_metadata.txt*, summarizes diary entries for each of the 25 women in this study for the first four days of weeks 1 and 10 (the full dataset is available online). The fields in this dataset are:
@@ -66,3 +66,5 @@ Grade | Criteria
 1          | *microbiome_analysis.py*  turned in but doesn't run, or is incorrect
 2          |   Accuracy of *Correlations.txt*, reasonable answers in *Analysis.md*
 3          |  Code uses good style, or analysis is really, really good (but this isn't a research paper, so don't go overboard). In particular, if you examine correlations conditional on the appropriate events (for example, number of sexual partners or spermicide use conditional on having intercourse), or recoding Nugent scores to BV positive or negative.
+## Notes and Hints ##
+I have added output files from HW7 to the *Materials* directory, just in case you didn't get HW7 to run. 
