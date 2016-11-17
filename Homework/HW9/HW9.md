@@ -1,34 +1,50 @@
-# Homework XXX: ****DRAFT**** 
+# Homework 9
+In this assignment you will make plots from the OTU relative abundances from previous assignments. 
 
-**NOTE: This is not the actual assignment yet!**
+## Things to Do by midnight, **12/1**, or Sooner ##
+Write a program called *plots.py* that uses matplotlib to create some plots/charts to analyze microbiome data from previous assignments (do what you need to to get the data into a usable format). For each of these, either turn in all work in a jupyter notebook or create separate png files named *MicrobiomeByWoman.png* and *DiversityByWoman.png* (respectively for each step 1--2 below, and *DiversityAllData.png* for step 3.)
 
-In this assignment gives you will XXX.
+1. Make horizontal stacked barcharts of each woman's microbiome that looks like this (pay attention to titles and axis lables). Data are from HW7, *summaryByWoman.txt*, and I have put a copy in the *Homework/Resources* directory. Save figure to *MicrobiomeByWoman.png* (note, that is a png file). 
 
-do some statistics and plotting on microbiome data?
-### Readings
-1. Read XXX
-2. Work through XXX
+![Relative abundance by woman](MicrobiomeByWoman.png)
 
-## Things to do before beginning of class, **11/17**, or sooner
-Later, we will look for correlations between microbiome changes and patient metadata.
+3. Plot average Shannon and Simpson diversity indexes in blue and red, respectively,  by woman. Add dotted horizontal line in the same color for the mean average index. Data are in *Homework/Resources/summaryByWoman.txt*. Save figure to *DiversityByWoman.png* (note, that is a png file). 
 
-1. Read *../Resources/vaginal_metadata.txt* into a pandas dataframe 
-2. Drop the first three columns (*ID, DATE_COM, and SITE2*)
-3. Merge the **first** dataframe from above (the one with a row for each day) with this one, using the patient name as the common field.
+![Diversity index averages](DiversityByWoman.png)
 
-	Beware, there may be some rows that don't match up. Again, this is real data, and that sort of thing happens all the time.
+3. (extra credit) Plot histogram of Shannon diversity scores for all the data. Data are in  *Resources/summaryByDay.txt*. Save figure to *DiversityAllData.png* (note, that is a png file).
 
-
-You will XXX
-
-1. do it
-2. do this too
-3. ...
+![Diversity values for all data](DiversityAllData.png)
+	
 ## Turn in homework
-
 1. Commit your work
 2. Update your local master
 3. Sync with the remote master (that is how we will turn in homework!).
+## Hints and Suggestions ##
+
+* If you increase the xlim setting, you will get more room on the right of your bars in (1)
+* Font sizes are:
+
+Font size | item
+--------------------	| ---------
+title	| xx-large
+x, y lables 	| large
+legend 	| medium
+color (in 3)	| 'darkgray'
+
+* It may help to get the patient ids onto axis labels with somthing like this
+>patientIDs = otuData.index
+
+	and then using that to *set_xticklabels* and *set_xticks*
+* There is known bug in matplotlib with the *fig.tight_layout()* command on macs. Instead, use *fig.set_tight_layout(True)*. This works when sending a plot a file.
+* If you can't see the figures in this document, view the document on github.com. 
 
 ## Grading
-We will grade your homework by XXX
+Grades will be determined as follows:
+
+Grade | Criteria 
+-------- | --------------
+0          | Nothing turned in
+1          | *plots.py*  turned in but doesn't run, or is incorrect, or figures turned in but they don't meet the specifications
+2          | *plots.py* accurate and figures correctly formatted
+3          | Code uses good style. Or does extra credit question
