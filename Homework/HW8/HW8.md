@@ -1,4 +1,4 @@
-vag	# Homework 8:
+# Homework 8:
 In this assignment you will continue human microbiome analysis by merging metadata and microbiome profile datasets and looking for correlations. There will be one or two assignments due after break that will plot data from these studies.
 
 The metadata, in *Homework/Resources/vaginal_metadata.txt*, summarizes diary entries for each of the 25 women in this study for the first four days of weeks 1 and 10 (the full dataset is available online). The fields in this dataset are:
@@ -22,7 +22,7 @@ TAMPON	|tampon used
 MEDS	|medication used
 MEDS_SP	|type(s) of medication used
 
-
+There is a copy of *summaryByDay.txt, summaryByWeek.txt, and summaryByWoman.txt* in *Homework/Resources*, which you are free to use.
 
 ## Readings
 1. Read text chapter 8, pages 217--236
